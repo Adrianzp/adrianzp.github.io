@@ -1,9 +1,60 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Ad3zp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Adrián</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="Resources/Icono.png" alt="Icono del blog" class="logo-header">
+            </a>
+            <h1 class="blog-title">Blog Ad3zp</h1>
+            <button class="menu-toggle" aria-label="Abrir menú">&#x22EE;</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="About.html">Sobre mí</a></li>
+                    <li><a href="Contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="posts">
 
+            <article class="post">
+                <a href="Blogs/2. Blog.html" class="post-link">
+                    <img src="Blogs\BLOG2.jpg" alt="Imagen del post 2">
+                    <div class="post-content">
+                        <h2>[#2] Título del Post 2</h2>
+                        <p>Resumen del post 2</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="post">
+                <a href="Blogs/1. Blog.html" class="post-link">
+                    <img src="Blogs\BLOG1.png" alt="Imagen del post 1">
+                    <div class="post-content">
+                        <h2>[#1] Título del Post 1</h2>
+                        <p>En algún apartado rincón del universo, desperdigado de innumerables 
+                            y centelleantes sistemas solares, hubo una vez un astro en el que 
+                            animales astutos inventaron el conocer. Fue el minuto más soberbio
+                            y más falaz de la Historia ... </p>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+    </main>
+    <script>
+        document.querySelector('.menu-toggle').onclick = function() {
+            document.getElementById('main-nav').classList.toggle('open');
+        };
+    </script>
+</body>
 </html>
