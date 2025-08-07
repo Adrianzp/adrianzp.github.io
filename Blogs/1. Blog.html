@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la Publicación</title>
+    <link rel="stylesheet" href="0. Blogs_style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../Resources/Icono.png" alt="Icono del blog" class="logo-header">
+            </a>
+            <h1 class="blog-title">Blog Ad3zp</h1>
+            <button class="menu-toggle" aria-label="Abrir menú">&#x22EE;</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../About.html">Sobre mí</a></li>
+                    <li><a href="../Contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="blog-post">
+            <h2 class="post-title">Título de la Publicación</h2>
+            <img src="BLOG1.png" alt="Imagen representativa" class="post-image">
+            <div class="post-content">
+                <!-- Escribir aquí la publicación -->
+                <p>
+                    <i>En algún apartado rincón del universo, desperdigado de innumerables y 
+                        centelleantes sistemas solares, hubo una vez un astro en el que 
+                        animales astutos inventaron el conocer. Fue el minuto más soberbio
+                         y más falaz de la Historia Universal, pero, a fin de cuentas, sólo 
+                         un minuto. Tras un par de respiraciones de la naturaleza, el astro 
+                         se entumeció y los animales astutos tuvieron que perecer. Alguien 
+                         podría inventar una fábula como ésta y, sin embargo, no habría 
+                         ilustrado suficientemente, cuán lamentable y sombrío, cuán estéril 
+                         y arbitrario es el aspecto que tiene el intelecto humano dentro de 
+                         la naturaleza; hubo eternidades en las que no existió, cuando de 
+                         nuevo se acabe todo para él, no habrá sucedido nada. Porque no hay 
+                         para ese intelecto ninguna misión ulterior que conduzca más allá de 
+                         la vida humana. No es sino humano, y solamente su poseedor y creador 
+                         lo toma tan patéticamente como si en él girasen los goznes del mundo.
+                    </i>
+                </p>
+
+                <p>
+
+                </p>
+
+            </div>
+        </article>
+    </main>
+
+    <script>
+        document.querySelector('.menu-toggle').onclick = function() {
+            document.getElementById('main-nav').classList.toggle('open');
+        };
+    </script>
+
+</body>
+</html>
