@@ -1,4 +1,33 @@
-<div class="contenedor-excel">
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNXOKypvLI17e76NAOD31GVSKKG6BHn-BGcM8uJYKUju8YwVa_oxs6W4kY8cJNT9ePy7Eod5-Q-oDI/pubhtml?gid=890672112&amp;single=true&amp;widget=true&amp;headers=false">
-    </iframe>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evita barras de desplazamiento innecesarias */
+}
+
+/* Esto obliga al contenedor y al iframe a llenar toda la pantalla */
+.contenedor-excel {
+    width: 100vw;   /* 100% del ancho de la ventana */
+    height: 100vh;  /* 100% del alto de la ventana */
+}
+
+.contenedor-excel iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-excel">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNXOKypvLI17e76NAOD31GVSKKG6BHn-BGcM8uJYKUju8YwVa_oxs6W4kY8cJNT9ePy7Eod5-Q-oDI/pubhtml?gid=890672112&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+
+</body>
+</html>
